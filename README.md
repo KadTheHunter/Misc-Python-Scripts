@@ -9,10 +9,14 @@ A collection of miscellaneous Python scripts I've created for various tasks.
 This script serves as an alternative to using RCON due to issues with color codes and long command sequences.
 
 ### Deleting Duplicate Clips
-[`DeletingDoubleClips.py`](DeletingDoubleClips.py) scans a specified folder and deletes files matching given patterns. This script was developed to help sort through old PS4/PS5 gameplay clips, many of which were duplicated during transfers between consoles, USB drives, and computers over the years.
+[`DeletingDoubleClips.py`](DeletingDoubleClips.py) scans a specified folder and deletes files matching given patterns. 
+
+This script was developed to help sort through old PS4/PS5 gameplay clips, many of which were duplicated during transfers between consoles, USB drives, and computers over the years.
 
 ### Thumbnail Generator
-[`ThumbGen.py`](ThumbGen.py) processes images from a source folder, crops them to a square size (top-aligned), and saves them in a destination folder. This script was designed to manage a large collection of Greentexts from 4chan, which I have been organizing and sharing on my [personal website](https://kadthehunter.github.io/greentexts/). Many images have irregular sizes, causing display issues in grids or galleries; this script addresses that by creating uniformly sized thumbnails.
+[`ThumbGen.py`](ThumbGen.py) processes images from a source folder, crops them to a square size (top-aligned), and saves them in a destination folder. 
+
+This script was designed to manage a large collection of Greentexts from 4chan, which I have been organizing and sharing on my [personal website](https://kadthehunter.github.io/greentexts/). Many images have irregular sizes, causing display issues in grids or galleries; this script addresses that by creating uniformly sized thumbnails.
 
 ## How to Use
 1. **Bedrock Command Automation**:
