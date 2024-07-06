@@ -8,6 +8,11 @@ A collection of miscellaneous Python scripts I've created for various tasks.
 
 This script serves as an alternative to using RCON due to issues with color codes and long command sequences.
 
+### Coordinate Drift Correction
+[`CoordinateDriftCorrection.py`](CoordinateDriftCorrection.py) scans a specified CSV file for Coordinates in rows whose 5th and 6th columns meet certain (hardcoded) criteria, then modifies them by an amount and operation provided by the user.
+
+This script was created to correct coordinates provided in [The Shulker Archives Database](https://kadthehunter.github.io/ShulkerArchives/database/) when I shifted multiple categories in the Map down so that the spare/blank cutout was in a more useful position.
+
 ### Deleting Duplicate Clips
 [`DeletingDoubleClips.py`](DeletingDoubleClips.py) scans a specified folder and deletes files matching given patterns. 
 
@@ -23,11 +28,15 @@ This script was designed to manage a large collection of Greentexts from 4chan, 
     - Edit the `commands = []` list with your desired commands.
     - Run the script to automate command execution in Minecraft Bedrock.
 
-2. **Deleting Duplicate Clips**:
+2. **Coordinate Drift Correction**:
+   - Provide the folder path, axis, operation and amount
+   - Run the script to modify the coordinates to specifications
+
+3. **Deleting Duplicate Clips**:
     - Provide the folder path and patterns to match.
     - Execute the script to delete files matching the patterns.
 
-3. **Thumbnail Generator**:
+4. **Thumbnail Generator**:
     - Specify the source and destination folder paths.
     - Run the script to crop and save images in the destination folder.
 
