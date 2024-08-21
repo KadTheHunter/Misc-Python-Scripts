@@ -19,9 +19,9 @@ This script was created to correct coordinates provided in [The Shulker Archives
 This script was developed to help sort through old PS4/PS5 gameplay clips, many of which were duplicated during transfers between consoles, USB drives, and computers over the years.
 
 ### Thumbnail Generator
-[`ThumbGen.py`](ThumbGen.py) processes images from a source folder, crops them to a square size (top-aligned), and saves them in a destination folder. 
+[`ThumbGen.py`](ThumbGen.py) processes images from a source folder, crops them to a square size (top-aligned), and saves them in a destination folder with the supplied prefix or suffix appended. 
 
-This script was designed to manage a large collection of Greentexts from 4chan, which I have been organizing and sharing on my [personal website](https://kadthehunter.github.io/greentexts/). Many images have irregular sizes, causing display issues in grids or galleries; this script addresses that by creating uniformly sized thumbnails.
+This script was designed to manage a large collection of posts from 4chan, which I have been organizing and sharing on my [personal website](https://kadthehunter.github.io/greentexts/). Many images have irregular sizes, causing display issues in grids or galleries; this script addresses that by creating uniformly sized thumbnails.
 
 ## How to Use
 1. **Bedrock Command Automation**:
@@ -37,11 +37,11 @@ This script was designed to manage a large collection of Greentexts from 4chan, 
     - Execute the script to delete files matching the patterns.
 
 4. **Thumbnail Generator**:
-    - Specify the source and destination folder paths.
+    - Specify the source and destination folder paths, and a prefix or suffix to be appended to the filename.
     - Run the script to crop and save images in the destination folder.
 
 ## Notes
-- Ensure you have the necessary Python libraries installed (`pyautogui`, `pyperclip`, `Pillow`, etc.).
+- Ensure you have the necessary Python libraries installed (`pyautogui`, `pyperclip`, `PyYaml`, `Pillow`, etc.).
 - Modify the scripts as needed to fit your specific use cases.
 - Contributions and suggestions are welcome to improve these scripts.
 
