@@ -23,6 +23,11 @@ This script was developed to help sort through old PS4/PS5 gameplay clips, many 
 
 This script was designed to manage a large collection of posts from 4chan, which I have been organizing and sharing on my [personal website](https://kadthehunter.github.io/greentexts/). Many images have irregular sizes, causing display issues in grids or galleries; this script addresses that by creating uniformly sized thumbnails.
 
+### Gallery Generator
+[`GalleryGen.py`](GalleryGen.py) takes a source folder of images, sorts them by the given method (numbered or descending modification date), and prints a YAML frontmatter gallery of images in the terminal using the supplied path and alt text.
+
+This script was made to generate galleries for my personal website, specifically the [AI](https://kadthehunter.github.io/ai/) and [Greentexts](https://kadthehunter.github.io/greentexts/) pages. Because of this, the script is a bit more focused on my specific use cases (needing to sort the gallery by numbers in the file names, having `_Thumb.webp` thumbnails, etc.), but should still be usable by others.
+
 ## How to Use
 1. **Bedrock Command Automation**:
     - Edit the `commands = []` list with your desired commands.
