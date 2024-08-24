@@ -28,6 +28,11 @@ This script was designed to manage a large collection of posts from 4chan, which
 
 This script was made to generate galleries for my personal website, specifically the [AI](https://kadthehunter.github.io/ai/) and [Greentexts](https://kadthehunter.github.io/greentexts/) pages. Because of this, the script is a bit more focused on my specific use cases (needing to sort the gallery by numbers in the file names, having `_Thumb.webp` thumbnails, etc.), but should still be usable by others.
 
+### Detect Double Images
+[`DetectDoubleImages.py`](DetectDoubleImages.py) scans a specified directory (and subdirectories) for images, calculates their hashes, and returns a list of duplicate images.
+
+This script was concocted to help me sort through more than 1.3k saved posts from 4chan, around 200 of which turned out to be duplicates. The returned list isn't the nicest or most readable, but it works and that's all that matters.
+
 ## How to Use
 1. **Bedrock Command Automation**:
     - Edit the `commands = []` list with your desired commands.
@@ -42,11 +47,19 @@ This script was made to generate galleries for my personal website, specifically
     - Execute the script to delete files matching the patterns.
 
 4. **Thumbnail Generator**:
-    - Specify the source and destination folder paths, and a prefix or suffix to be appended to the filename.
-    - Run the script to crop and save images in the destination folder.
+    - Provide the source and destination folder paths, and a prefix or suffix to be appended to the filename.
+    - Run the script to crop and save images to the destination folder.
+
+5. **Gallery Generator**:
+    - Provide the source folder path, and the path and alt text for the gallery.
+    - Run the script to generate the gallery in the terminal.
+
+6. **Detect Double Images**:
+    - Provide the directory path.
+    - Run the script to find duplicate images.
 
 ## Notes
-- Ensure you have the necessary Python libraries installed (`pyautogui`, `pyperclip`, `PyYaml`, `Pillow`, etc.).
+- Ensure you have the necessary Python libraries installed (`pyautogui`, `pyperclip`, `PyYaml`, `Pillow`, `imagehash`, etc.).
 - Modify the scripts as needed to fit your specific use cases.
 - Contributions and suggestions are welcome to improve these scripts.
 
